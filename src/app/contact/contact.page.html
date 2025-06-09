@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header class="ion-text-center"></ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input placeholder="Digite seu nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">E-mail</ion-label>
+      <ion-input type="email" placeholder="Digite seu e-mail"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Mensagem</ion-label>
+      <ion-textarea placeholder="Digite sua mensagem"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="primary">
+    ENVIAR
+  </ion-button>
+</ion-content>

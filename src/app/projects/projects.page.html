@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Meus Projetos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item button detail (click)="abrirDetalhe('PWA ADS UPF', 'PWA usando HTML, JS e CSS.', 'https://github.com/R4fael-L3onardo/meupwa')">
+      <ion-label>
+        <h2>PWA ADS UPF</h2>
+        <p>PWA usando HTML, JS e CSS.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail (click)="abrirDetalhe('TODO List', 'App de tarefas usando Ionic.', 'https://github.com/R4fael-L3onardo/todolist')">
+      <ion-label>
+        <h2>TODO List</h2>
+        <p>App de tarefas usando Ionic.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail (click)="abrirDetalhe('Personal APP', 'App de apresentação pessoal com Ionic.', 'https://github.com')">
+      <ion-label>
+        <h2>Personal APP</h2>
+        <p>App de apresentação pessoal com Ionic.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-project-detail [project]="selectedProject"></app-project-detail>
+</ion-content>
